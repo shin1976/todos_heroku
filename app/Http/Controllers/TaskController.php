@@ -43,7 +43,7 @@ class TaskController extends Controller
 
      $current_folder->tasks()->save($task);
 
-     return redirect()->route('tasks.inxex',[
+     return redirect()->route('tasks.index',[
        'id' => $current_folder->id,
      ]);
    }
